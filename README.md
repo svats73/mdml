@@ -1,4 +1,4 @@
-# MDML: Deep Learning for Molecular Simulation CLI 
+# MDML: Deep Learning for Molecular Simulation
 
 **Framework**
 
