@@ -122,6 +122,8 @@ The MDML CLI tool supports various commands for processing and analyzing your MD
  - `--pickle_descriptor`: One or more file paths to pickles used as descriptors for the system
  - `--pickle_features`: One or more file paths to pickles used as features for the system
  - `--tau`: Time lag parameter (integer)
+
+This will generate a `plumed` file which can be used for enhanced sampling. 
  
  NOTE: you can add multiple pickle descriptors/features by adding additional `--pickle_descriptor` flags before additional paths to descriptors/features, ensure that the ordering is the same for descriptors and features 
  
