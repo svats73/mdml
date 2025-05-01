@@ -165,7 +165,7 @@ This command deletes any serialized state, allowing you to start a new analysis 
 ### Team 
 
 Contributors: Shray Vats, Andreas Mardt, Soumendranath Bhakat
-Contact: Shray Vats, email: <firstname><lastname>@gmail.com
+Contact: Shray Vats, email: `<firstname><lastname>@gmail.com`
 
 ### References 
 
