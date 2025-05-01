@@ -1,18 +1,10 @@
 # MDML: Deep Learning for Molecular Simulation CLI 
 
-MDML is a software suite for dimensionality reduction, featurization, and analysis of Molecular Dynamics data. Our contributors are Shray Vats, Andreas Mardt, and Soumendranath Bhakat. The main point of contact for this repo is Shray Vats.
+**Framework**
 
-## Reference
+![fig1](/image-mdml.png)
 
-If you use `mdml` for published research, make sure to cite us:
-
-Generalizable Protein Dynamics in Serine-Threonine Kinases: Physics is the key
-Soumendranath Bhakat, Shray Vats, Andreas Mardt, Alexei Degterev
-bioRxiv 2025.03.06.641878; doi: https://doi.org/10.1101/2025.03.06.641878
-
-Vats S, Bobrovs R, Söderhjelm P, Bhakat S (2024) 
-AlphaFold-SFA: Accelerated sampling of cryptic pocket opening, protein-ligand binding and allostery by AlphaFold, slow feature analysis and metadynamics. 
-PLOS ONE 19(8): e0307226. https://doi.org/10.1371/journal.pone.0307226
+MDML enables training ML model on molecular dynamics simulation data to capture structural features that governs slowly varying conformational motions. The output of `mdml` can be integrated with enhanced sampling and Markov State model. 
 
 ## Overview
 
@@ -169,3 +161,16 @@ To clear the current state and start fresh:
 ``` mdml restart ```
 
 This command deletes any serialized state, allowing you to start a new analysis without interference from previous runs.
+
+### Team 
+
+Contributors: Shray Vats, Andreas Mardt, Soumendranath Bhakat
+Contact: Shray Vats, email: <firstname><lastname>@gmail.com
+
+### References 
+
+If you use `mdml` for published research, make sure to cite the following:
+1. Generalizable Protein Dynamics in Serine-Threonine Kinases: Physics is the key Soumendranath Bhakat, Shray Vats, Andreas Mardt, Alexei Degterev bioRxiv 2025.03.06.641878; doi: https://doi.org/10.1101/2025.03.06.641878
+2. Vats S, Bobrovs R, Söderhjelm P, Bhakat S (2024) AlphaFold-SFA: Accelerated sampling of cryptic pocket opening, protein-ligand binding and allostery by AlphaFold, slow feature analysis and metadynamics. PLOS ONE 19(8): e0307226. https://doi.org/10.1371/journal.pone.0307226
+3. Mardt, A., Pasquali, L., Wu, H. et al. VAMPnets for deep learning of molecular kinetics. Nat Commun 9, 5 (2018). https://doi.org/10.1038/s41467-017-02388-1
+
