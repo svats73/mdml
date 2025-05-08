@@ -31,7 +31,7 @@ MDML is a powerful command-line interface (CLI) tool designed for the analysis o
    Project feature importance onto 3D structure for hotspot identification.
 
 7. **Classifier to Distinguish Conformational Ensembles**
-   Train binary/multi-class models to classify simulation frames by state.
+   Train binary models to classify simulation ensembles and capture hotspots.
 
 ## Custom Installation
 
