@@ -187,13 +187,30 @@ To clear the current state and start fresh:
 
 This command deletes any serialized state, allowing you to start a new analysis without interference from previous runs.
 
-### Team 
+## 🔮 Future Improvements
+
+1. **ML and SFA on Distances**
+   Extend featurization to inter-residue distances .
+
+2. **Clustering on ML Space**
+   Cluster in latent space to discover novel states.
+
+3. **Generation of PLUMED Files with ML/SFA on Distances**
+   Bias distances-based coordinates in enhanced sampling.
+
+4. **Utility Scripts to Map ML/SFA (Distances) Weights to PDB**
+   Visualize distance-derived importance on structures.
+
+5. **Combine Dihedral and Distances in a 2D ML Space**
+   Integrate multiple feature types for richer reaction coordinates.
+
+## Team 
 
 Contributors: Shray Vats, Andreas Mardt, Soumendranath Bhakat
 
 Contact: Shray Vats, email: `<firstname><lastname>@gmail.com`
 
-### References 
+## References 
 
 If you use `mdml` for your research, make sure to cite the following:
 1. Generalizable Protein Dynamics in Serine-Threonine Kinases: Physics is the key Soumendranath Bhakat, Shray Vats, Andreas Mardt, Alexei Degterev bioRxiv 2025.03.06.641878; doi: https://doi.org/10.1101/2025.03.06.641878
