@@ -10,6 +10,29 @@ MDML enables training ML model on molecular dynamics simulation data to capture 
 
 MDML is a powerful command-line interface (CLI) tool designed for the analysis of molecular dynamics (MD) simulations. Leveraging the capabilities of`mdml` library, MDML facilitates the loading of MD trajectory data, the featurization of trajectories, the execution of Slow Feature Analysis (SFA) and Variational Autoencoding, and the creation of PLUMED files for biasing simulations based on SFA and VAE components. 
 
+## 🌟 Highlights
+
+1. **Dihedral Featurization of MD Dataset**
+   Extract backbone and sidechain torsion angles to represent conformational states.
+
+2. **Slow Feature Analysis (SFA) on Dihedral Features**
+   Identify the slowest collective motions driving conformational transitions.
+
+3. **Clustering on SFA Space**
+   Clustering on the SFA space for downstream kinetic modeling and adaptive sampling.
+
+4. **Time-lagged Auto-Encoder (ML) on Dihedral Features**
+   A deep learning framework to capture non-linear reaction coordinates.
+
+5. **Generation of PLUMED Files for Enhanced Sampling**
+   Auto-generate biasing scripts for enhanced sampling.
+
+6. **Utility Scripts to Map ML Weights to PDB to Capture Hotspots**
+   Project feature importance onto 3D structure for hotspot identification.
+
+7. **Classifier to Distinguish Conformational Ensembles**
+   Train binary/multi-class models to classify simulation frames by state.
+
 ## Custom Installation
 
 Before installing MDML, it is necessary to install a custom version of `sklearnsfa`, which is packaged within the `mdml` repository, as well as msmbuilder2022 found at https://github.com/msmbuilder/msmbuilder2022. This ensures compatibility and optimal performance for SFA computations within MDML. Follow these steps to install both the custom `sklearnsfa` and `mdml`:
