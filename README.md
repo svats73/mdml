@@ -138,6 +138,12 @@ The MDML CLI tool supports various commands for processing and analyzing your MD
 - `--ensemble_two`: Path to second featurized ensemble of trajectories
 - `--ensemble_features`: Path to dataframe which contains featurization information for the given ensembles
 
+### Dump classified ensembles as a plumed file
+
+``` mdml create-classifier-plumed --plumed_filename FILENAME ```
+
+- `--plumed_filename`: File path to save the generated PLUMED file.
+
 ### Train VAE 
  
  ``` md-sfa train-vae --pickle_descriptor PICKLE_DESCRIPTOR_FILE --pickle_features PICKLE_FEATURES_FILE --pickle_features --tau TAU_VALUE ```
@@ -161,12 +167,6 @@ This will generate a `plumed` file which can be used for enhanced sampling.
  - `--teacher_flag` : Optional flag to make predictions with teacher mode
  
  NOTE: you can add multiple pickle descriptors/features by adding additional `--pickle_descriptor` flags before additional paths to descriptors/features, ensure that the ordering is the same for descriptors and features 
-
-### Dump classified ensembles as a plumed file
-
-``` mdml create-classifier-plumed --plumed_filename FILENAME ```
-
-- `--plumed_filename`: File path to save the generated PLUMED file.
 
 
 ### Dumping SFA Weights as B-Factors
