@@ -103,7 +103,7 @@ The MDML CLI tool supports various commands for processing and analyzing your MD
 ``` mdml run-sfa --n_components N --tau T ```
 
 - `--n_components`: Number of SFA components to extract.
-- `--tau`: The tau parameter for SFA.
+- `--tau`: The lag time for SFA.
 
 ### Creating PLUMED File
 
@@ -115,7 +115,7 @@ The MDML CLI tool supports various commands for processing and analyzing your MD
 
 ``` mdml dump-sfa-components --save_file FILE ```
 
-- `--save_file`: File path to save the SFA components.
+- `--save_file`: File path to save the SFA components. This will create a .pkl file which you can use to build Markov State Model.
 
 ### Cluster on SFA Components
 
@@ -152,7 +152,7 @@ The MDML CLI tool supports various commands for processing and analyzing your MD
  - `--pickle_features`: One or more file paths to pickles used as features for the system
  - `--tau`: Time lag parameter (integer)
 
-This will generate a `plumed` file which can be used for enhanced sampling. 
+**This will generate a `plumed` file which can be used for enhanced sampling. The output `cv_pred.npz` can be used to build Markov State Model.**
  
  NOTE: you can add multiple pickle descriptors/features by adding additional `--pickle_descriptor` flags before additional paths to descriptors/features, ensure that the ordering is the same for descriptors and features 
  
